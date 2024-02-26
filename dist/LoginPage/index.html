@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #8b8888;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        button {
+            width: 90%;
+            padding: 10px;
+            margin: 5px 0;
+            margin-right: auto;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form>
+            <input class="loginInput" type="text" id="username" placeholder="Username" required>
+            <input class="loginInput" type="password" id="password" placeholder="Password" required>
+        </form>
+            <button id="loginButton" type="submit">Submit</button>
+    </div>
+</body>
+<script type="module" src="LoginPage.mjs"></script>
+</html>
